@@ -1,0 +1,442 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  border: 0%;
+}
+
+:root {
+    --primary: hsl(198, 59%, 48%);
+    --light: #F6F7F8;
+    --dark: #134870;
+}
+.body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+
+  }
+/*** Navbar ***/
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .navbar-brand,
+.navbar a.btn {
+    height: 75px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+/*** Termina navbar ***/
+
+  
+/*** Empieza header ***/
+
+ 
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #92c1f3a2;
+    }
+  
+
+  .jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+.container text h1{
+    font-size: 10px;
+}
+
+  @media (min-width: 576px) {
+    .jumbotron {
+      padding: 4rem 2rem;
+    }
+  }
+  
+
+/*** Termina header ***/
+
+
+/*** Empieza main ***/
+
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.service-icon {
+    position: relative;
+    margin: -50px 0 25px 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    color: #FFFFFF;
+    background: var(--primary);
+}
+
+/*** Termina main ***/
+
+/*footer*/
+.pie{
+    grid-area: pie;
+    grid-column: 1/4;
+    background:rgba(51, 51, 51, 0.945);
+    text-decoration-color: #f3f3f3;
+    
+}
+
+.contenedorcolumnas{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 20px;
+
+}
+
+.contenedorall{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.columna1{
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.columna1 h1{
+    font-size: 22px;
+    color: #ddd;
+}
+
+.columna1 p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ddd;
+}
+
+
+.columna2{
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.columna2 h1{
+    font-size: 22px;
+    color: #ddd;
+}
+
+.contenedorcolumnas{
+    margin-top: 20px;
+    display: flex;
+}
+
+.contenedorcolumnas img{
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+}
+
+.contenedorcolumnas label{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+.columna3{
+    margin-left: 40px;
+
+}
+.columna3 h1{
+    font-size: 22px;
+    color: #ddd;
+    display: flex;
+}
+
+
+.columna img{
+    width: 26px;
+    height: 26px;
+}
+
+.columna3 label {
+    margin-left: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.piefooter{
+    margin-top: 10px;
+    width: 100%;
+    background: rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.Copyrigth{
+        color:#ddd;
+}
+
+/*termina footer nuevo*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***empieza sobre nosotros**/
+
+.team img {
+  position: relative;
+  
+  z-index: 1;
+}
+
+.team .team-text {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  left: 0;
+  border-bottom: 5px solid #34baf8;
+  transition: .5s;
+}
+
+.team:hover .team-text {
+  bottom: 100px;
+}
+/***termina sbore nosotros***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** empieza productos ANTIGUO ***/
+.headerprod{
+    background-color: rgba(1, 135, 245, 0.659);
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: rgba(8, 130, 230, 0.348);
+    overflow:hidden;
+}
+
+.tablaprecios {
+    display:inline-block;
+    width:100%;
+    margin-top:50px
+   }
+   
+   /*COLUMNAS*/
+   
+   .preciocombustible {
+    display:inline-block;
+    background-color:#f3f3f3;
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+    margin-bottom:50px;
+    box-shadow: 0px 2px 5px #ddd
+   }
+
+   
+   /*CABECERA*/
+   
+   .preciocabecera {
+    background-color:rgba(51, 51, 51, 0.326);
+    padding:20px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px
+   }
+   
+   .preciocombustible:nth-child(2) .preciocabecera {
+    background-color:rgba(1, 135, 245, 0.372)
+   }
+   
+   .preciocabecera h3 {
+    color:#f3f3f3;
+    text-align:center;
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:0
+   }
+   
+   .preciocabecera p {
+    text-align:center;
+    color:#f3f3f3;
+    font-size:14px;
+    margin-bottom:0
+   }
+
+ /*** termina productos ANTIGUO***/
+
+ /*** empieza productos NUEVO ***/
+
+ .bg-secondary {
+    background-color: #ddd;
+}
+.bg-primary {
+    background-color: #7cbdff !important;
+  }
+
+
+
+/*** Empieza contacto***/
+
+
+.headercont{
+
+    background-color: rgba(1, 135, 245, 0.659);
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: rgba(8, 130, 230, 0.348);
+    overflow:hidden;
+}
+
+
+
+label {
+display:block;
+margin-top:20px;
+letter-spacing:1px;
+}
+
+.principal {
+display:block;
+margin:0 auto;
+width:510px;
+color: #666666;
+font-family:Arial;
+}
+
+form {
+margin: auto;
+width:400px;
+color: #6bb4fe;
+font-weight: bold;
+font-size: 20px;
+}
+
+input, textarea {
+width:380px;
+height:27px;
+background:#e0e0e0;
+border:2px solid #f6f6f6;
+padding:10px;
+margin-top:5px;
+font-size:10px;
+color:#ffffff;
+}
+
+textarea {
+height:150px;
+}
+
+#submit {
+width:70px;
+height:35px;
+
+border:none;
+margin-top:20px;
+
+}
+
+/*** Termina contacto***/
+  
