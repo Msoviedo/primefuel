@@ -3,11 +3,6 @@
   padding: 0%;
   border: 0%;
 }
-* :root {
-  --primary: rgb(65, 172, 239);
-  --light: rgb(246, 247, 248);
-  --dark: rgb(19, 72, 112);
-}
 
 .body {
   margin: 0;
