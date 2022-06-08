@@ -16,7 +16,7 @@
 
 /*** Empieza navegador barra ***/
 .logo {
-  color: #6bb4fe;
+  color: var(--bs-indigo);
 }
 
 .navbar .navbar.sticky-top {
@@ -81,7 +81,7 @@
 .contenedorheader .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #92c1f3;
+  background-color: #0188ff;
 }
 .contenedorheader .jumbotron-fluid {
   padding-right: 0;
