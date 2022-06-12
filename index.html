@@ -10,13 +10,14 @@
         <link href="imagenes/icons8-fuel-64.png" rel="icon">
         <!-- ver que me falla en los fa fa icon de la barra-->
         
+      
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/estilos2.css" rel="stylesheet">
-        <script src="js/main.js"></script>
-
-
-
-    </head>
+        <script src="js/main.js"></script></head>
 
 
     <body>
@@ -35,7 +36,7 @@
                         <a href="productos.html" class="nav-item nav-link">Productos</a>
                         <a href="Servicios.html" class="nav-item nav-link">Servicios</a>
                         <div class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros</a>
+                            <a href="#"  id="navbarDropdown" role="button" data-mdb-toggle="dropdown"  aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros</a>
                             <div class="dropdown-menu bg-light m-0">
                                 <a href="testimonio.html" class="dropdown-item">Testimonios</a>
                             </div>
@@ -47,8 +48,9 @@
             <!-- Termina navbar -->
 
             <!-- Empieza header  -->
-
-        <header> <!-- no me sale poner el titulo visible  -->
+            
+        <header> 
+            <!--NO LOGRE QUE EL TITULO ESTE EN EL MEDIO DEL VIDEO  -->
             <div class="overlay"></div>
                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                     <source src="imagenes/Diseño sin título.mp4" type="video/mp4" >
@@ -72,7 +74,7 @@
             <div class="container-xxl py-5 t-0">
                 <div class="container">
                     <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                        <h3 class="text-primary">Nuestro Servicio</h3>
+                        <h3 class="text-indigo">Nuestro Servicio</h3>
                         <h1 class="mb-4">Ayudamos a mantener alimentados a tu flota o coche con la energía que impulsa su negocio.</h1>
                     </div>
                     <div class="row g-4">
@@ -81,7 +83,7 @@
                                 <img class="img-fluid" src="imagenes/1.png" alt="">
                                 <div class="position-relative p-4 pt-0">
                                     <div class="service-icon">
-                                        <i class="fa-solid fa-building"></i>
+                                        <i class="fa fa-bus" aria-hidden="true"></i>
                                     </div>
                                     <h4 class="mb-3">Flota camiones</h4>
                                     <p>Inicie rutas más rápido, elimine las paradas para repostar antes o después del viaje e integre con su tarjeta de flota y plataforma de gestión.</p>
@@ -94,7 +96,7 @@
                                 <img class="img-fluid" src="imagenes/3.png" alt="" href="fa">
                                 <div class="position-relative p-4 pt-0">
                                     <div class="service-icon">
-                                        <i class="fa-solid fa-car fa-3x"></i>
+                                        <i class="fa fa-car" aria-hidden="true"></i>
                                     </div>
                                     <h4 class="mb-3">Particulares</h4>
                                     <p>Ahorre tiempo y recarga en el sitio. Y aumente su bienestar en tiempos de entrega instantáneos sin demoras.</p>
@@ -107,7 +109,7 @@
                                 <img class="img-fluid" src="imagenes/2.png" alt="">
                                 <div class="position-relative p-4 pt-0">
                                     <div class="service-icon">
-                                        <i class="fa-light fa-building fa-3x"></i>
+                                        <i class="fa fa-building" aria-hidden="true"></i>
                                     </div>
                                     <h4 class="mb-3">Empresas</h4>
                                     <p>Entrega de energía, sin infraestructura. Llevar gas regular y premium, sin inversión en infraestructura..</p>
@@ -119,8 +121,7 @@
                 </div>
             </div>
         </main>
-        <!-- termina el main-->
-
+        <!-- termina el main-->    
         <!-- empieza seccion-->
         <section>
             <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
@@ -154,7 +155,34 @@
 
         </section>
 
-	
+	     <!-- Empieza news -->
+         <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-sm-12 col-xs-12"> 
+                       <div class="card p-3 p-md-4 text-black">    
+    
+                            <span><i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i></span> 
+                            
+                            <h6 class="my-3"> Suscribete para recibir noticias, descuentos y mucho más! </h6>
+                            
+                            <div class="row d-flex my-2 pr-2 pr-md-5 div1">
+                                <div class="col-9">
+                                    <input type="email" class="form-control py-3" id="inp1" placeholder="Enter email address">
+                                </div>
+                                
+                                <div class="col-3 px-0">
+                                    <button class="btn text-black px-4 py-2"> Enviar </button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                </div>
+            </div>
+    
+    
+        </div>
+
+
        <!-- Empieza Footer NO TOCAR -->
 
         <footer class="pie">
