@@ -367,24 +367,29 @@ html, body {
 
 
 .flex-container.wrap{
+  border: none;
+  flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background: rgba(51, 51, 51, 0.945);
   text-decoration-color: #f3f3f3;
+  padding: 0px;
+  border: none;
 } 
 
 
 .contenedorall {
   display: flex;
   justify-content: center;
-  padding: 0px;
+  
+
 }
 
 .contenedorcolumnas {
   width: 100%;
   margin-left: 0px;
-  padding: 0px;
+
 }
 
 .columna1 {
