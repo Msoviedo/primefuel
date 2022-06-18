@@ -364,22 +364,27 @@ html, body {
 
 
 /*footer*/
-.pie {
-  grid-area: pie;
-  grid-column: 1/4;
+
+
+.flex-container.wrap{
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   background: rgba(51, 51, 51, 0.945);
   text-decoration-color: #f3f3f3;
-}
+} 
 
-.contenedorcolumnas {
-  width: 100%;
-  margin-left: 10px;
-}
 
 .contenedorall {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 0px;
+}
+
+.contenedorcolumnas {
+  width: 100%;
+  margin-left: 0px;
+  padding: 0px;
 }
 
 .columna1 {
@@ -399,8 +404,9 @@ html, body {
 }
 
 .columna2 {
+
   max-width: 600px;
-  margin-left: 200px;
+  margin-left: auto;
 }
 
 .columna2 h1 {
@@ -427,9 +433,10 @@ html, body {
 }
 
 .columna3 {
-  margin-left: 200px;
-  
+  max-width: 600px;
+  margin-left: auto;
 }
+
 
 .columna3 h1 {
   font-size: 22px;
