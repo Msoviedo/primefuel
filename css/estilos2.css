@@ -4,11 +4,13 @@
   border: 0%;
 }
 
+/**
 :root {
   --primary: rgb(65, 172, 239);
   --light: rgb(246, 247, 248);
   --dark: rgb(19, 72, 112);
 }
+**/
 
 .body {
   margin: 0;
@@ -22,7 +24,7 @@
 
 /*** Empieza navegador barra ***/
 .logo {
-  color: #6bb4fe;
+  color: var(--bs-orange);
 }
 
 .navbar.sticky-top {
@@ -88,6 +90,8 @@
   }
 }
 /*** Termina navbar ***/
+
+
 /*** Empieza header ***/
 header {
   position: relative;
@@ -98,7 +102,7 @@ header {
   overflow: hidden;
 }
 
-header video {
+header .video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -128,7 +132,22 @@ header .container {
   z-index: 2;
 }
 
+@media (max-width: 992px) {
+  header .overlay {
+    display: block;
+    border: none;
+    margin-top: 0;
+  }
+}
 
+@media (min-width: 992px) {
+  .video {
+    display: block;
+    border: none;
+    margin-top: 0;
+  }
+
+}
 /*** Termina header ***/
 
 
@@ -354,7 +373,6 @@ html, body {
 
 .contenedorcolumnas {
   width: 100%;
-  max-width: 1300px;
   margin-left: 10px;
 }
 
@@ -366,7 +384,7 @@ html, body {
 
 .columna1 {
   max-width: 400px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .columna1 h1 {
@@ -381,12 +399,12 @@ html, body {
 }
 
 .columna2 {
-  max-width: 400px;
-  margin-left: 20px;
+  max-width: 600px;
+  margin-left: 200px;
 }
 
 .columna2 h1 {
-  font-size: 22px;
+  font-size: 20px;
   color: #ddd;
 }
 
@@ -402,14 +420,15 @@ html, body {
 }
 
 .contenedorcolumnas label {
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
+  margin-top: -18px;
+  font-size: 15px;
   color: white;
 }
 
 .columna3 {
-  margin-left: 50px;
-  max-width: 400px;
+  margin-left: 200px;
+  
 }
 
 .columna3 h1 {
@@ -426,9 +445,9 @@ html, body {
 }
 
 .columna3 label {
-  margin-left: 10px;
-  margin-top: 20px;
-  font-size: 10px;
+  margin-left: 25px;
+  margin-top: -18px;
+  font-size: 15px;
   color: white;
 }
 
@@ -445,7 +464,12 @@ html, body {
   color: #ddd;
 }
 
+
+
+
 /*termina footer nuevo*/
+
+
 /***empieza sobre nosotros**/
 .team img {
   position: relative;

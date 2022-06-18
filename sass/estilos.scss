@@ -1,13 +1,10 @@
-@import "../css/bootstrap.css";
-@import "../sass/functions";
 @import "../sass/variables";
-@import "../sass//mixins";
-@import "../sass/bootstrap.scss";
+
+
 
 $font-primary: 'Poppins',Arial, sans-serif;
 $font-secondary: 'Playfair Display', serif;
 
-$primary: #afa939;
 
 *{
     box-sizing: border-box;
@@ -178,31 +175,40 @@ $primary: #afa939;
   
 }
 
-.columna1{
+@mixin columnas {
   max-width: 400px;
   margin-left: 20px;
 }
+.columna1{
+  @include columnas;
+}
 
-.columna1 h1{
+
+@mixin columnash1 {
   font-size: 22px;
   color: #ddd;
 }
 
-.columna1 p{
+@mixin columnasp {
   font-size: 14px;
   margin-top: 20px;
   color: #ddd;
 }
+.columna1 h1{
+  @include columnash1;
+}
+
+.columna1 p{
+ @include columnasp;
+}
 
 
 .columna2{
-  max-width: 400px;
-  margin-left: 20px;
+  @include columnas;
 }
 
 .columna2 h1{
-  font-size: 22px;
-  color: #ddd;
+  @include columnash1;
 }
 
 .contenedorcolumnas{
@@ -227,8 +233,7 @@ $primary: #afa939;
 
 }
 .columna3 h1{
-  font-size: 22px;
-  color: #ddd;
+  @include columnash1;
   display: flex;
 }
 
@@ -254,7 +259,7 @@ $primary: #afa939;
 }
 
 .Copyrigth{
-      color:#ddd;
+  color:#ddd;
 }
 
 /*termina footer nuevo*/
