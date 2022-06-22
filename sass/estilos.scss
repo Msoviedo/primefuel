@@ -454,7 +454,11 @@ margin-top:20px;
 }
 
 /*** Termina contacto***/
-.contenedortestomonios{
+
+
+/*** empieza testimonios ***/
+
+/***.contenedortestomonios{
   position: relative;
   margin-left: 30%;
 }
@@ -472,12 +476,15 @@ margin-top:20px;
   width: 500px;
   margin-bottom: 30px;
 }
+***/
 
-.card-img-top {
+
+
+
+.card-img-top{
     max-width: 100px;
     border-radius: 50%;
-    margin: 15px auto 0;
     box-shadow: 0 8px 20px -4px #95abbb;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
   }
