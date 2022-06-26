@@ -249,9 +249,11 @@ header .container {
 
 @media (max-width: 575.98px) {
 .boton{
-  font-size: smalls;
+  font-size: 8px;
 }
 }
+
+
 /**TERMINA  TESTIMONIO NEWS**/
 
 
