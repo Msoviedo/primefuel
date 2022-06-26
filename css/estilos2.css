@@ -71,7 +71,7 @@
     border-top: 1px solid #EEEEEE;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 991.98px) {
   .navbar .nav-item .dropdown-menu {
     display: block;
     border: none;
@@ -132,7 +132,7 @@ header .container {
   z-index: 2;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.8px) {
   header .overlay {
     display: block;
     border: none;
@@ -140,7 +140,7 @@ header .container {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991.8px) {
   .video {
     display: block;
     border: none;
@@ -181,7 +181,7 @@ header .container {
 
 /** Empieza News **/
 .card {
-  background-color: #096bcd;
+  background-color: #91c1f0;
   border-radius: 10px;
   font-family: 'Manrope', sans-serif;
 }
@@ -214,6 +214,43 @@ header .container {
 
 *:focus{
   outline: none;
+}
+
+
+@media (max-width: 991.98px) {
+  .card {
+    margin-right: 0;
+    padding: 10px 0;
+    display: block;
+    border: none;
+    margin-top: 0;
+
+  }
+
+
+}
+@media (max-width: 991.98px) {
+  .container-fluid .card {
+    display: block;
+    margin-top: 0;
+    background-color: white;
+    width: 300px;
+    margin-right: 100px;
+  }
+
+  .btn{
+    width: 80px;
+    height: 40px;
+    font-size: 11px;
+ 
+  }
+
+}
+
+@media (max-width: 575.98px) {
+.boton{
+  font-size: smalls;
+}
 }
 /**TERMINA  TESTIMONIO NEWS**/
 
@@ -477,10 +514,34 @@ html, body {
 }
 
 
+@media (max-width: 575.98px) {
+  .flex-container.wrap{
+    margin-left: -10px;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: rgba(51, 51, 51, 0.945);
+    text-decoration-color: #f3f3f3;
+    width:min-content;
+
+  }
+
+}
+  .contenedorall {
+    display: block;
+    margin-left: -30px;
+  
+  }
+
+  .columna1 h1 .columna1 h2 .columna1 h3 {
+    font-size: 5px;
+}
+
+
 
 
 /*termina footer nuevo*/
-
 
 /***empieza sobre nosotros**/
 .team img {
@@ -628,6 +689,9 @@ textarea {
   margin-top: 20px;
 }
 
+
+
+
 /*** Termina contacto***/
 .contenedortestomonios {
   position: relative;
@@ -649,7 +713,6 @@ textarea {
   width: 500px;
   margin-bottom: 30px;
 }
-
 
 .card-img-top {
   max-width: 100px;
