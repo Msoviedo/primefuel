@@ -4,14 +4,6 @@
   border: 0%;
 }
 
-/**
-:root {
-  --primary: rgb(65, 172, 239);
-  --light: rgb(246, 247, 248);
-  --dark: rgb(19, 72, 112);
-}
-**/
-
 .body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -517,33 +509,39 @@ html, body {
 
 
 @media (max-width: 575.98px) {
-  .flex-container.wrap{
-    margin-left: -10px;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    background: rgba(51, 51, 51, 0.945);
-    text-decoration-color: #f3f3f3;
-    width:min-content;
 
-  }
+  .contenedorgeneral{
+    display: flex;
+    margin-left:-10px;
+    margin-bottom: 0px;
 
-}
-  .contenedorall {
-    display: block;
-    margin-left: -30px;
+  } 
   
+  .contenedorcolumnas{
+  display: block;
+
+  border: none;
+  padding: none;
   }
 
-  .columna1 h1 .columna1 h2 .columna1 h3 {
-    font-size: 5px;
+  .columna1 {
+    margin-left: 10px;
+
 }
 
+.columna2 {
+  margin-left: 10px;
 
+}
+.columna3 {
+  margin-left: 10px;
 
+}
+}
 
 /*termina footer nuevo*/
+
+
 
 /***empieza sobre nosotros**/
 .team img {
