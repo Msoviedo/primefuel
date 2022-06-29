@@ -510,15 +510,17 @@ html, body {
 
 
 @media (max-width: 575.98px) {
- 
+
   .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl{
-     padding-left: 2px;
-    
-    padding-right: 0px;
+     padding-left: 0px;
+     padding-right: 0px;
     
     }
 
-
+    .row{
+    --bs-gutter-x: 0px;
+      
+      }
 
   .contenedorgeneral{
     display: block;
