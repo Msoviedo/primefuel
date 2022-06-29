@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: 0%;
-  border: 0%;
+  padding: 0px;
+  border: 0px;
 }
 
 .body {
@@ -405,7 +405,8 @@ html, body {
   flex-wrap: wrap;
   background: rgba(51, 51, 51, 0.945);
   text-decoration-color: #f3f3f3;
-  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   border: none;
 } 
 
@@ -509,23 +510,35 @@ html, body {
 
 
 @media (max-width: 575.98px) {
+ 
+  .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl{
+     padding-left: 2px;
+    
+    padding-right: 0px;
+    
+    }
+
+
 
   .contenedorgeneral{
-    display: flex;
-    margin-left:-10px;
-    margin-bottom: 0px;
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
 
   } 
   
   .contenedorcolumnas{
   display: block;
-
+  padding-left: 0px;
+  padding-right: 0px;
   border: none;
-  padding: none;
+  
   }
 
   .columna1 {
     margin-left: 10px;
+   
 
 }
 
@@ -633,7 +646,7 @@ html, body {
   background-color: #7cbdff !important;
 }
 
-/*** Empieza contacto***/
+/*** Empieza contacto
 
 .headercont {
   background-color: rgba(1, 135, 245, 0.659);
@@ -658,6 +671,7 @@ label {
   color: #666666;
   font-family: Arial;
 }
+***/
 
 form {
   margin: auto;
@@ -666,6 +680,17 @@ form {
   font-weight: bold;
   font-size: 20px;
 }
+
+
+@media (max-width: 575.98px) {
+ 
+.form {
+  width: 300px;
+  }
+   
+
+}
+
 
 input, textarea {
   width: 380px;
